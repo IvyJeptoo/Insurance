@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.background-image {
-  background-image: url(images/);
+.page1 {
+  background-image: url(backgroungimg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0.7;
   height: 100vh;
 }
