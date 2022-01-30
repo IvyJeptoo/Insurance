@@ -20,7 +20,7 @@
 }
 .backgroundimage {
   position: relative;
-  /* height: 50vh; */
+  height: 150vh;
   width: 100vw;
 
   /* width: 100%; */
@@ -48,7 +48,7 @@
 }
 #backgroundimage {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
 }
 .getquote {
   width: max-content;
@@ -61,14 +61,138 @@
 #learnmore {
   border: 1px solid white;
 }
+
 .topmain {
   background: rgba(35, 31, 32, 0.4);
-  height: 100vh;
+  height: 150vh;
   position: absolute;
+  width: 100%;
+  margin-top: -870px;
+  padding: 10px;
+
   text-align: center;
 }
 .mainbutton {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.peaceofmind,
+.setforlife {
+  color: black;
+  background-color: white;
+  width: 75%;
+  text-align: left;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+.tiles {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.satisfaction {
+  background-color: #23a6f0;
+  width: 75%;
+  text-align: left;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+.tile2 {
+  color: black;
+  text-align: center;
+}
+.industrydescription {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+.industryimage1,
+.industryimage2,
+.industryimage3 {
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: fit-content;
+  padding: 30px 10px;
+}
+.profileimage {
+  width: 100px;
+}
+.siximages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.siximages > img {
+  width: 100px;
+  margin: 20px;
+}
+.subscribeform {
+  background-image: linear-gradient(to right, blue, rgb(248, 8, 168));
+  text-align: center;
+  padding: 20px;
+}
+button {
+  background-color: blue;
+  padding: 10px;
+}
+.pricing {
+  color: black;
+  text-align: center;
+  margin: 50px;
+}
+
+.free,
+.standard,
+.premium {
+  margin: 50px 10px;
+  padding: 10px;
+  width: 105%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.free > p,
+.standard > p,
+.premium > p {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.standard {
+  background-color: blue;
+  color: white;
+}
+.branches {
+  text-align: left;
+  color: white;
+  background-color: blue;
+  margin-top: -40px;
+  padding: 50px 20px;
+}
+.worldimage {
+  width: 200px;
+  padding: 30px 10px;
+}
+.familyimage > img {
+  width: 100vw;
+  height: 150px;
+  margin-left: -50px;
+}
+.freequote {
+  text-align: left;
+}
+.freequoteform {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  height: 350px;
 }
