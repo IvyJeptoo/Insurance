@@ -218,3 +218,37 @@ button {
 .socialmedia {
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .navbardesktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbarmobile {
+    display: none;
+  }
+  .links {
+    flex-direction: row;
+    align-items: center;
+  }
+  .login {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #bestinsurance {
+    margin-top: 250px;
+  }
+  .ensure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .mainbutton {
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .ensure > p {
+    padding: 20px;
+  }
+}
