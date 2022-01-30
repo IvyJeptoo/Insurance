@@ -140,8 +140,9 @@
   padding: 20px;
 }
 button {
-  background-color: blue;
+  background-color: #23a6f0;
   padding: 10px;
+  border: none;
 }
 .pricing {
   color: black;
@@ -155,7 +156,7 @@ button {
   margin: 50px 10px;
   padding: 10px;
   width: 105%;
-  border: 1px solid blue;
+  border: 1px solid #23a6f0;
   display: flex;
   flex-direction: column;
 }
@@ -167,15 +168,17 @@ button {
   align-items: center;
 }
 .standard {
-  background-color: blue;
+  background-color: #252b42;
   color: white;
 }
 .branches {
   text-align: left;
   color: white;
-  background-color: blue;
+  background-color: #252b42;
   margin-top: -40px;
-  padding: 50px 20px;
+  width: 100vw;
+  margin-left: -50px;
+  padding: 50px;
 }
 .worldimage {
   width: 200px;
@@ -195,4 +198,23 @@ button {
   padding-bottom: 50px;
   justify-content: space-between;
   height: 350px;
+}
+.consultancy {
+  text-align: left;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.companyinfo > p,
+.legal > p,
+.features > p,
+.resources > p {
+  padding: 10px;
+}
+.getintouch > p {
+  display: flex;
+  align-items: center;
+}
+.socialmedia {
+  display: flex;
 }
