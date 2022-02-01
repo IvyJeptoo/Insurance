@@ -1,254 +1,441 @@
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.navbarmobile {
-  color: black;
-  background-color: white;
+
+
+#header-section {
+  width: 100%;
+  padding: 20px 0;
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-.navbardesktop {
+.navbardesktop{
   display: none;
 }
-.navtop {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.iconify {
-  margin: 20px;
-}
-.backgroundimage {
-  position: relative;
-  height: 150vh;
-  width: 100vw;
 
-  /* width: 100%; */
-  opacity: 0.5;
-}
-.main {
+ #header-section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  background-color: rgb(19, 16, 16);
+  opacity: 0.3;
+} 
+.navbarmobile {
+  width: 100%;
+  margin: 0 auto;
+  color: black;
+    background-color: white;
+    z-index: 2;
+    
+    
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .navtop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+.hero {
+  width: 80%;
+  margin: 0 auto;
   color: white;
 }
 
-.links {
-  width: 300px;
+.ensure {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-}
-.becomemember {
-  width: fit-content;
-  height: fit-content;
-}
-.login {
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-#backgroundimage {
-  width: 100%;
-  height: 150vh;
-}
-.getquote {
-  width: max-content;
-  border-radius: 5px;
-  padding: 10px;
-}
-#getquote {
-  background-color: rgb(109, 109, 221);
-}
-#learnmore {
-  border: 1px solid white;
+  gap: 20px;
 }
 
-.topmain {
-  background: rgba(35, 31, 32, 0.4);
-  height: 150vh;
-  position: absolute;
-  width: 100%;
-  margin-top: -870px;
-  padding: 10px;
+.ensure h1 {
+  color: white;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
-  text-align: center;
+.ensure p {
+  position: relative;
+  font-weight: 500;
+  font-size: 1rem;
 }
 .mainbutton {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-}
-.peaceofmind,
-.setforlife {
-  color: black;
-  background-color: white;
-  width: 75%;
-  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  gap: 15px;
+  }
 
-  padding: 20px;
-  margin-top: 20px;
-}
-.tiles {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.satisfaction {
-  background-color: #23a6f0;
-  width: 75%;
-  text-align: left;
 
-  padding: 20px;
-  margin-top: 20px;
-}
-.tile2 {
-  color: black;
-  text-align: center;
-}
-.industrydescription {
-  color: black;
-  text-align: center;
-  margin-top: 20px;
-}
-.industryimage1,
-.industryimage2,
-.industryimage3 {
-  border: 1px solid black;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  width: fit-content;
-  padding: 30px 10px;
-}
-.profileimage {
-  width: 100px;
-}
-.siximages {
+  .getquote{
+
+    background-color: #23A6F0;
+    padding: 5px;
+    margin: 15px;
+    
+    z-index: 2;
+
+  }
+  .learnmore{
+    padding: 5px;
+    margin: 15px;
+    z-index: 2;
+    
+  }
+  .tiles{
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.siximages > img {
-  width: 100px;
-  margin: 20px;
-}
-.subscribeform {
-  background-image: linear-gradient(to right, blue, rgb(248, 8, 168));
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;  
+  }
+  .peaceofmind{
+    background-color: white;
+    width: 80%;
+    z-index: 2;
+  }
+  .setforlife{
+    background-color: white;
+    width: 80%;
+    z-index: 2;
+  }
+  .satisfaction{
+    background-color: #23A6F0;
+    width: 80%;
+    z-index: 3;
+  }
+  #ssp{
+    text-align: left;
+    gap: 20px;
+  }
+  
+  .tile2{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  }
+  #pss{
+    text-align: center;
+    gap: 20px;
+  }
+  .industrydescription{
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .industry{
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
-  padding: 20px;
-}
-button {
+  }
+  .profileimage{
+    width: 40%;
+    padding: 10px;
+  }
+  .industryimage1, .industryimage2, .industryimage3{
+    width: 80%;
+    border: 1px solid grey;
+    margin: 20px;
+    
+  }
+  .siximages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+    .siximages > img{
+      width: 30%;
+      margin: 20px;
+    }
+    .subscribeform{
+      background-image: linear-gradient(to right, blue,rgb(248, 8, 168));
+      text-align: center;
+      padding: 20px;
+      color: white;
+      width: 100%;
+    }
+    button{
+  color: white;
   background-color: #23a6f0;
   padding: 10px;
   border: none;
-}
-.pricing {
-  color: black;
-  text-align: center;
-  margin: 50px;
-}
-
-.free,
-.standard,
-.premium {
-  margin: 50px 10px;
-  padding: 10px;
-  width: 105%;
-  border: 1px solid #23a6f0;
-  display: flex;
-  flex-direction: column;
-}
-.free > p,
-.standard > p,
-.premium > p {
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-.standard {
+    }
+    .pricing{
+      
+      margin: 0 auto ;        
+      
+    }
+    .free, .standard, .premium{
+      border: 1px solid #23a6f0;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 20px;
+      line-height: 2;
+      
+    }
+    .free > p, .premium > p, .standard > p{
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+    .standard {
   background-color: #252b42;
   color: white;
-}
-.branches {
-  text-align: left;
-  color: white;
-  background-color: #252b42;
-  margin-top: -40px;
-  width: 100vw;
-  margin-left: -50px;
-  padding: 50px;
-}
-.worldimage {
-  width: 200px;
-  padding: 30px 10px;
-}
-.familyimage > img {
-  width: 100vw;
-  height: 150px;
-  margin-left: -50px;
-}
-.freequote {
-  text-align: left;
-}
-.freequoteform {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-  justify-content: space-between;
-  height: 350px;
-}
-.consultancy {
-  text-align: left;
-  height: 200px;
-  justify-content: space-between;
-}
+    }
+    .centre{
+      text-align: center;
+    }
+    .branches{
+      width: 100%;
+      margin: 0;
+      color: white;
+      background-color: #252b42;
+      text-align: center;
 
-.companyinfo > p,
-.legal > p,
-.features > p,
-.resources > p {
+    }
+    .worldimage{
+      width: 200px;
+    }
+    .familyimage > img {
+        width: 100%;
+        background-position: top;
+        height: 300px;
+      
+    }
+    .freequote{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      line-height: 2;
+      padding: 20px;
+    }
+    
+
+.consultancy{
+  width: 80%;
+  text-align: left;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consultancy > button {
+  width: 50%;
+}
+.companyinformation{
+  line-height: 2;
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+.footer{
+  margin: 0 auto;
+  width: 80%;
   padding: 10px;
 }
-.getintouch > p {
-  display: flex;
-  align-items: center;
-}
-.socialmedia {
-  display: flex;
+.socialmedia{
+  padding: 20px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 480px) {
-  .navbardesktop {
-    display: flex;
+ 
+  .navbardesktop{
+    display: flex;    
+    flex-direction: row;
     justify-content: space-evenly;
+
   }
-  .navbarmobile {
+  .navbarmobile{
     display: none;
   }
-  .links {
-    flex-direction: row;
-    align-items: center;
-  }
-  .login {
+  .navtop {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  z-index: 2;
+  
+}
+ 
+
+  .links{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    color: white;
+    z-index: 2;
   }
-  #bestinsurance {
+  .login{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-evenly;
+    color: white;
+    z-index: 2;
+    
+    
+  }
+  .becomemember{
+  width: fit-content;
+  height: fit-content;
+  }
+  #bestinsurance{
     margin-top: 250px;
   }
-  .ensure {
+  .ensure{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .mainbutton {
+  .mainbutton{
+    display: flex;
     flex-direction: row;
-    width: max-content;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .ensure > p {
+  .tiles {
+  width: 40%;
+  display: flex;
+  flex: row;
+
+}
+.tile2{
+  padding: 20px;
+}
+.industry{
+  display: flex;
+}
+.siximages{
+  display: flex;
+  flex-direction: row;
+}
+ .siximages > img{
+      width: 20%;
+      margin: 20px;   
+ }
+  #subscribe{
+    text-align: left;
+    
+  }
+  #pricing{
     padding: 20px;
   }
+  .updates{
+    display: flex;
+    justify-content: center;
+    
+  }
+.branches{
+  text-align: left;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
+.branchtext{
+  text-align: left;
+  width: 50%;
+}
+.worldimage {
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+
+  
+}
+.appointment{
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -100px;
+  padding: -20px;
+}
+.familyimage{
+  width: 300px;
+}
+#freequote{
+  background-color: white;
+  margin-top: -13px;
+}
+.consultancy {
+  
+  width: 80%;
+  text-align: right;
+  padding: 30px;
+   
+}
+#left{
+  text-align: left;
+}
+#contact{
+  padding-top: -50px;
+}
+.companyinformation{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer{
+  display: flex;
+}
+.socialmedia{
+  display: flex;
+  align-items: right;
+}
+  
+  
+  
+
+}
+
+  
+
+  
+
+  
+
+
+
+      
+    
+  
+
+
+
+
+
+
+  
+
