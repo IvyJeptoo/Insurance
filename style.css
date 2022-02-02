@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -315,18 +316,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
+    
   }
   .mainbutton{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+
   }
   .tiles {
-  width: 40%;
+  width: 50%;
   display: flex;
-  flex: row;
+  margin-top: -2.5%;  
+  
 
+}
+
+/* .ensure{
+  margin-top: -10%; */
 }
 .tile2{
   padding: 20px;
@@ -409,16 +419,26 @@
 }
 footer{
   display: flex;
+  width: 100%;
+}
+footer > p {
+  width: 50%;
 }
 .socialmedia{
   display: flex;
-  align-items: right;
+  width: 50%;
+  justify-content: right;
+}
+.peaceofmind, .setforlife, .satisfaction {
+  width: 25%;
+  padding: 3%;
+  
 }
   
   
   
 
-}
+
 
   
 
